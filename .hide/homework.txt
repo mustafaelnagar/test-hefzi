@@ -1,0 +1,218 @@
+
+Inlämningsuppgift: ObjektOrienterad Programmering
+Du skall nu lösa 10 programmeringsuppgifter. Låt varje uppgift utgöra ett Project i en och samma Solution. Vid inlämning gör du sedan en ZIP-fil av hela din Solution och lämnar in den. Kom ihåg att först göra en Clean Solution! Då blir inlämningen mindre.
+
+De åtta uppgifterna är:
+
+Första klassen och metoden ToString()
+Konstruktorer och destruktorer
+Klasser för person, student och lärare
+Fotoalbum
+Arv
+Interface
+Abstrakta klasser
+Polymorfism
+Generiska klasser och metoder
+ 
+
+Uppgift 1: Första klassen och metoden ToString()
+Skapa ett program i C# som frågar användaren efter namnen på tre personer. Namnen ska sparas i en array av objekt av typen Person. För att göra detta måste du först skapa en klass Person med en egenskap Name av typen string. Klassen skall även ha en override av standardmetoden ToString().
+
+Avsluta programmet med att skriva ut personerna på konsolen med hjälp av ToString().
+
+Input
+Juan
+
+Sara
+
+Kalle
+Output
+Hej! Jag heter Juan
+Hej! Jag heter Sara
+Hej! Jag heter Kalle
+ 
+
+ 
+
+ 
+
+Uppgift 2: Konstruktorer och destruktorer
+Skapa ett program i C# som frågar användaren efter namnen på tre personer. Namnen ska sparas i en array av objekt av typen Person. För att göra detta måste du först skapa en klass Person med en egenskap Name av typen string, en konstruktor med samma namn som klassen, samt en destruktor som sätter namnet till en tom sträng. Klassen skall även ha en override av standardmetoden ToString().
+
+Avsluta programmet med att skriva ut personerna på konsolen med hjälp av ToString().
+
+(Ja, detta är väldigt likt föregående uppgift. Utnyttja gärna det)
+
+Input
+Juan
+
+Sara
+
+Kalle
+Output
+Hej! Jag heter Juan
+Hej! Jag heter Sara
+Hej! Jag heter Kalle
+
+
+ 
+
+ 
+
+Uppgift 3: Klasser för person, student och lärare
+Skapa ett nytt projekt med tre klasser. Programmets huvudsakliga klasser (förutom Program.cs) skall vara:
+
+Person
+Student
+Teacher
+Student och Teacher skall ärva från Person.
+
+Klassen Student ska innehålla en publik metod Study() som skriver Jag pluggar! på skärmen
+
+Klassen Person måste ha två publika metoder Greet() och SetAge(int age) som används för att sätta personens ålder.
+
+Klassen Teacher ska ha en public metod Explain() som skriver ut Jag förklarar på skärmen.
+
+Låt sedan huvudprogrammet göra följande:
+
+Skapa en ny person, som skall säga hej
+Skapa en ny Student, sätt en ålder, säg hej och visa åldern på skärmen
+Skapa en ny Teacher, sätt åldern, sätt åldern och börja förklara.
+Input
+ 
+Output
+Hej! 
+Hej!
+Jag är 21 år gammal
+Jag pluggar!
+Hej!
+Jag förklarar
+ 
+
+ 
+
+ 
+
+Uppgift 4: Fotoalbum
+Skapa ett program i C# som hanterar ett fotoalbum. Använd objektorienterad programmering
+
+Börja med att skapa en klass PhotoBook med ett privat fält numPages av typen int. Den måste också ha en publik metod GetNumberPages som returnerar antalet sidor i boken.
+
+Standardkonstruktorn skapar ett album med 16 sidor. Det behövs en konstruktor till, där vi kan ange hur många sidor albumet ska ha.
+
+Det finns även en klass BigPhotoBook vars konstruktor skapar ett album med 64 sidor.
+
+Låt sedan huvudprogrammet göra följande tester:
+
+Skapa ett standardalbum och visa antalet sidor
+Skapa ett album med 24 sidor och visa antalet sidor
+Skapa ett stort album och visa antalet sidor.
+Input
+ 
+Output
+16
+24
+64
+ 
+
+ 
+
+ 
+
+Uppgift 5: Arv
+Skapa ett program i C# som frågar användaren efter tre namn på personer och lagrar dem i en array av objekt av typ Person. Det skall finnas två personer av typen Student och en av typen Teacher.
+
+För att åstadkomma detta, skapa en klass Person som har en egenskap Name av typ string, en konstruktor som tar emot namnet som parameter och en override på ToString().
+
+Skapa sedan två klasser till som ärver från Person. Låt dem heta Student respektive Teacher. Klassen Student har en en metod Study som skriver på konsolen att studenten pluggar. Klassen Teacher har en metod Explain som skriver på konsollen att läraren undervisar. Kom ihåg att skapa konstruktorer på barnklasserna som anropar förälderns konstruktorer.
+
+Avsluta programmet med att läsa in personerna (studenterna och läraren) från konsollen och köra metoderna Explain och Study.
+
+Input
+Juan
+
+Sara
+
+Kalle
+Output
+Undervisar
+Pluggar
+Pluggar
+
+
+Uppgift 6: Interface
+Skapa ett program i C# som implementerar ett interface IVehicle med två metoder, en för Drive av typen void och en för Refuel av typen bool som har en parameter av typ int med mängden bränsle som skall fyllas på. Skapa sedan en klass Car med en konstruktor som tar en parameter med bilens bränslemängd vid start och som implementerar metoderna Drive och Refuel för bilen.
+
+Metoden Drive skriver ut på skärmen att bilen kör, om mängden drivmedel är större än 0. Metoden Refuel ökar mängden bränse i bilen och returnerar true.
+
+För att testa metoderna, skapa ett objekt av typen Car med 0 i bränslemängd i huvudprogrammet. Fråga sedan användaren efter hur mycket bränsle som skall fyllas på. Slutligen körs metoden Drive för bilen.
+
+Input
+50
+Output
+Kör
+ 
+
+ 
+
+Uppgift 7: Abstrakta klasser
+Skapa ett program i C# som implementerar en abstrakt klass Animal som har en egenskap Name av typen string och tre metoder SetName(name), GetName och Eat. Metoden Eat är en abstrakt metod av typen void.
+
+Du behöver också skapa en klass Dog som implementerar klassen Animal och en metod Eat som säger att hunden äter.
+
+För att testa programmet frågar du användaren efter ett hundnamn och skapar ett nytt objekt av typen Dog, ger hunden sitt namn och kör metoderna GetName och Eat.
+
+Input
+Lufsen
+Output
+Lufsen
+Äter
+ 
+
+ 
+
+ 
+
+Uppgift 8: Polymorfism
+Skapa ett program i C# med en klass Calculator med fyra varianter på metoden Sum. De olika varianterna skall hantera olika typer av data: heltal (int), flyttal (float), samt sträng (string). De olika varianterna av Sum skall skriva ut summan av de inskickade parametrarna. Varianten som hanterar string skall skriva ut att endast numeriska data kan användas.
+
+I huvudprogrammet skriver du lämpliga tester för att kontrollera att allt fungerar som det skall.
+
+När detta är klart skall du skapa ytterligare två klasser, IceCream och Chocolate, där Chocolate ärver från IceCream. Båda klasserna har en konstruktor som skriver ut vilken class de är (IceCream respektive Chocolate). Basklassen har en metod Flavor som skriver ut glassens smak (vanilj). Subklassen har en override av Flavor som skriver ut chokladglassens smak.
+
+I huvudprogrammet skapar du nu en chokladglass och skriver ut dess smak.
+
+Input
+Output
+Summan av 5 och 4 är 9
+Summan av 9,3 och 8,6 är 17,900002
+Hej världen - är inte numeriskt
+Class : Icecream
+Class : Chocolate
+IceCream Type : Chocolate
+ 
+
+ 
+
+ 
+
+Uppgift 9: Generiska klasser och metoder
+Skapa ett program i C# med en klass GenericClass som hanterar data av typen T. Ge den ett publikt fält av typen T och namnet msg. Klassen skall även ha en metod GenericMethod med två generiska parametrar, name och location. Metoden skall helt enkelt skriva ut msg, name och location på skärmen.
+
+I huvudprogrammet instantierar du din klass med string som typ. Sätt ett värde för msg och kör metoden GenericMethod.
+
+När detta är klart skapar du en ny klass SampleClass med en generisk metod Gmethod, som tar två generiska parametrar a och b. Metoden skriver ut de båda parametrarna på skärmen.
+
+I huvudprogrammet instantierar du en SampleClass. Anropa sedan metoden Gmethod med två olika uppsättningar parametrar. Den ena uppsättningen är heltal, den andra är strängar.
+
+ 
+
+Input
+Output
+Välkommen till ABF!
+Name: Stina Persson
+Location: Helsingborg
+Param1: 1
+Param2: 2
+Param1: Gabriel Ruis
+Param2: Säffle

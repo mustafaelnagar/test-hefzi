@@ -1,0 +1,11 @@
+using System;
+
+class Person
+{
+    public string Name { get; set; }
+
+    public override string ToString()
+    {
+        return $"Hej! Jag heter {Name}";
+    }
+}
