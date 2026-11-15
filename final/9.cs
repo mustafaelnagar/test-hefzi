@@ -21,18 +21,12 @@ class SampleClass
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        GenericClass<string> gc = new GenericClass<string>();
-        gc.msg = "Välkommen till ABF!";
-        gc.GenericMethod<string, string>("Stina Persson", "Helsingborg");
+GenericClass<string> gc = new GenericClass<string>();
+gc.msg = "Välkommen till ABF!";
+gc.GenericMethod<string, string>("Stina Persson", "Helsingborg");
 
-        Console.WriteLine();
+Console.WriteLine();
 
-        SampleClass sc = new SampleClass();
-        sc.Gmethod<int, int>(1, 2);
-        sc.Gmethod<string, string>("Gabriel Ruis", "Säffle");
-    }
-}
+SampleClass sc = new SampleClass();
+sc.Gmethod<int, int>(1, 2);
+sc.Gmethod<string, string>("Gabriel Ruis", "Säffle");

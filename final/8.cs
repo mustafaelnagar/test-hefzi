@@ -46,16 +46,10 @@ class Chocolate : IceCream
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        Calculator calc = new Calculator();
-        calc.Sum(5, 4);
-        calc.Sum(9.3f, 8.6f);
-        calc.Sum("Hej världen", "test");
+Calculator calc = new Calculator();
+calc.Sum(5, 4);
+calc.Sum(9.3f, 8.6f);
+calc.Sum("Hej världen", "test");
 
-        Chocolate choco = new Chocolate();
-        choco.Flavor();
-    }
-}
+Chocolate choco = new Chocolate();
+choco.Flavor();

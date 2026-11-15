@@ -25,14 +25,8 @@ class Dog : Animal
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        string dogName = Console.ReadLine();
-        Dog myDog = new Dog();
-        myDog.SetName(dogName);
-        Console.WriteLine(myDog.GetName());
-        myDog.Eat();
-    }
-}
+string dogName = Console.ReadLine();
+Dog myDog = new Dog();
+myDog.SetName(dogName);
+Console.WriteLine(myDog.GetName());
+myDog.Eat();

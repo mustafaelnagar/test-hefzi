@@ -20,21 +20,15 @@ class Person
     }
 }
 
-class Program
+Person[] people = new Person[3];
+
+for (int i = 0; i < 3; i++)
 {
-    static void Main()
-    {
-        Person[] people = new Person[3];
+    string name = Console.ReadLine();
+    people[i] = new Person(name);
+}
 
-        for (int i = 0; i < 3; i++)
-        {
-            string name = Console.ReadLine();
-            people[i] = new Person(name);
-        }
-
-        foreach (Person p in people)
-        {
-            Console.WriteLine(p);
-        }
-    }
+foreach (Person p in people)
+{
+    Console.WriteLine(p);
 }

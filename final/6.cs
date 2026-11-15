@@ -30,13 +30,7 @@ class Car : IVehicle
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        Car myCar = new Car(0);
-        int fuelAmount = int.Parse(Console.ReadLine());
-        myCar.Refuel(fuelAmount);
-        myCar.Drive();
-    }
-}
+Car myCar = new Car(0);
+int fuelAmount = int.Parse(Console.ReadLine());
+myCar.Refuel(fuelAmount);
+myCar.Drive();

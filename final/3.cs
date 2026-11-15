@@ -35,22 +35,16 @@ class Teacher : Person
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        Person p1 = new Person();
-        p1.Greet();
+Person p1 = new Person();
+p1.Greet();
 
-        Student s1 = new Student();
-        s1.SetAge(21);
-        s1.Greet();
-        Console.WriteLine($"Jag är {s1.Age} år gammal");
-        s1.Study();
+Student s1 = new Student();
+s1.SetAge(21);
+s1.Greet();
+Console.WriteLine($"Jag är {s1.Age} år gammal");
+s1.Study();
 
-        Teacher t1 = new Teacher();
-        t1.SetAge(40);
-        t1.Greet();
-        t1.Explain();
-    }
-}
+Teacher t1 = new Teacher();
+t1.SetAge(40);
+t1.Greet();
+t1.Explain();
